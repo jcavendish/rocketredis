@@ -20,9 +20,9 @@ const ToastContainer: React.FC<ToastContainerProps> = ({ toasts }) => {
   }, [toasts])
 
   const transitions = useTransition(visibleToasts, toast => toast.id, {
-    from: { right: '-120%' },
+    from: { right: '-150%' },
     enter: { right: '0%' },
-    leave: { right: '-120%' },
+    leave: { right: '-150%' },
     config: {
       duration: 200
     }
